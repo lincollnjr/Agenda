@@ -1,83 +1,96 @@
 <!DOCTYPE html>
 <html>
+
   <head>
-    <meta charset='utf-8'>
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <link href='https://fonts.googleapis.com/css?family=Chivo:900' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
-    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-    <title>Trabalho 0 - Lincoln - Heitor by lincollnjr</title>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Trabalho 0 - Lincoln - Heitor : Agenda em ruby implementando mvc e singleton" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>Trabalho 0 - Lincoln - Heitor</title>
   </head>
 
   <body>
-    <div id="container">
-      <div class="inner">
 
-        <header>
-          <h1>Trabalho 0 - Lincoln - Heitor</h1>
-          <h2>Agenda em ruby implementando mvc e singleton</h2>
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/lincollnjr/Agenda">View on GitHub</a>
+
+          <h1 id="project_title">Trabalho 0 - Lincoln - Heitor</h1>
+          <h2 id="project_tagline">Agenda em ruby implementando mvc e singleton</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/lincollnjr/Agenda/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/lincollnjr/Agenda/tarball/master">Download this project as a tar.gz file</a>
+            </section>
         </header>
+    </div>
 
-        <section id="downloads" class="clearfix">
-          <a href="https://github.com/lincollnjr/Agenda/zipball/master" id="download-zip" class="button"><span>Download .zip</span></a>
-          <a href="https://github.com/lincollnjr/Agenda/tarball/master" id="download-tar-gz" class="button"><span>Download .tar.gz</span></a>
-          <a href="https://github.com/lincollnjr/Agenda" id="view-on-github" class="button"><span>View on GitHub</span></a>
-        </section>
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h1>
+<a name="linguagem" class="anchor" href="#linguagem"><span class="octicon octicon-link"></span></a>Linguagem</h1>
 
-        <hr>
+<h2>
+<a name="ruby" class="anchor" href="#ruby"><span class="octicon octicon-link"></span></a>Ruby</h2>
 
-        <section id="main_content">
-          <h3>
-<a name="linguagem" class="anchor" href="#linguagem"><span class="octicon octicon-link"></span></a>Linguagem</h3>
-
-<pre><code># Ruby
-* Linguagem tornada púbica em 1995;
-* Versão atual 2.1.1 (24/02/14)
-* Aplicações: Simulações da Nasa, Toronto Rehab na gestão de telefonia
+<ul>
+<li>Linguagem tornada púbica em 1995;</li>
+<li>Versão atual 2.1.1 (24/02/14)</li>
+<li>Aplicações: Simulações da Nasa, Toronto Rehab na gestão de telefonia
 e helpdesk, Morpha/Siemmens em controladores de robos, ODS atualização
- de domínios e Telefonica em 3G, etc
+de domínios e Telefonica em 3G, etc</li>
+</ul><p>fonte: ruby-lang.org</p>
 
-fonte: ruby-lang.org
-</code></pre>
+<h2>
+<a name="caracteristicas" class="anchor" href="#caracteristicas"><span class="octicon octicon-link"></span></a>Caracteristicas</h2>
 
-<h3>
-<a name="caracteristicas" class="anchor" href="#caracteristicas"><span class="octicon octicon-link"></span></a>Caracteristicas</h3>
-
-<pre><code>* Orientada a Objeto e flexibilidade (não restrição)
-
-1 - assim como em python a divisão de pacotes não é feita em
+<ul>
+<li>Orientada a Objeto e flexibilidade (não restrição);</li>
+</ul><pre><code>1 - assim como em python a divisão de pacotes não é feita em
  pastas e sim arquivos;
 2 - o singleton é feito com a importação require singleton;
 
 </code></pre>
 
-<h3>
-<a name="padr%C3%B5es" class="anchor" href="#padr%C3%B5es"><span class="octicon octicon-link"></span></a>Padrões</h3>
+<h1>
+<a name="padr%C3%B5es" class="anchor" href="#padr%C3%B5es"><span class="octicon octicon-link"></span></a>Padrões</h1>
 
-<pre><code>[ex](http://www.macoratti.net/vbn_mvc4.gif)
-##MVC
-* Divisão em 3 camadas:
+<h3>
+<a name="mvc" class="anchor" href="#mvc"><span class="octicon octicon-link"></span></a>MVC</h3>
+
+<p><a href="http://www.macoratti.net/vbn_mvc4.gif">ex</a></p>
+
+<ul>
+<li>Divisão em 3 camadas:
 M: elementos do dominio e iteração de persistência;
 V: Interação com o usuário;
-C: controle da regra de negócio;
-
-Vantagens:
+C: controle da regra de negócio;</li>
+</ul><pre><code>Vantagens:
 * Facilita o reaproveitamento de código;
 * Facilidade na manutenção e adição de recursos;
 * Maior integração da equipe e/ou divisão de tarefas;
 * Diversas tecnologias estão adotando essa arquitetura;
 * Facilidade em manter o seu código sempre limpo;
 
-##Singleton
-
 </code></pre>
 
 <h3>
-<a name="diagrama-de-classes" class="anchor" href="#diagrama-de-classes"><span class="octicon octicon-link"></span></a>Diagrama de Classes</h3>
+<a name="singleton" class="anchor" href="#singleton"><span class="octicon octicon-link"></span></a>Singleton</h3>
+
+<ul>
+<li>Padrão de projeto para garantir a existência de uma instância;</li>
+</ul><pre><code>require 'singleton'
+ class Foobar
+    include Singleton
+end
+</code></pre>
+
+<h2>
+<a name="diagrama-de-classes" class="anchor" href="#diagrama-de-classes"><span class="octicon octicon-link"></span></a>Diagrama de Classes</h2>
 
 <pre><code>[Diagrama](http://www.dropbox.com/s/eapt3da5idbgygh/diagrama.png)
 </code></pre>
@@ -304,15 +317,18 @@ class ControleGeral
     end
  end
 </code></pre>
-        </section>
-
-        <footer>
-          Trabalho 0 - Lincoln - Heitor is maintained by <a href="https://github.com/lincollnjr">lincollnjr</a><br>
-          This page was generated by <a href="http://pages.github.com">GitHub Pages</a>. Tactile theme by <a href="https://twitter.com/jasonlong">Jason Long</a>.
-        </footer>
-
-        
-      </div>
+      </section>
     </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Trabalho 0 - Lincoln - Heitor maintained by <a href="https://github.com/lincollnjr">lincollnjr</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
   </body>
 </html>
